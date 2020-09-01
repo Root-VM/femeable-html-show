@@ -1,0 +1,31 @@
+.box{
+  width: 100%; position: relative;
+  .line{
+    display: flex; align-items: flex-end; justify-content: space-between;
+    margin-bottom: 60px;
+    h2{
+      font-family: var(--font-releway);
+      font-style: normal; font-weight: 500;
+      font-size: 30px; line-height: 35px;
+      letter-spacing: 0.02em; margin: 0;
+      color: var(--color--black);
+    }
+  }
+
+  >p{
+    font-family: var(--font-releway); font-style: normal;
+    font-weight: 600; font-size: 20px;
+    line-height: 23px; letter-spacing: 0.02em;
+    color: var(--color--black); margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 919px) {
+  .box{
+    .line{
+      >div:nth-child(2){
+        display: none;
+      }
+    }
+  }
+}

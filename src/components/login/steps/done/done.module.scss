@@ -1,0 +1,29 @@
+.box{
+  .title{
+    margin: 90px 0 20px 0; font-family: var(--font-releway);
+    font-style: normal; font-weight: 600;
+    font-size: 28px; line-height: 35px;
+    text-align: center; letter-spacing: 0.02em;
+    color: var(--color--black-dark);
+  }
+
+  .text{
+    font-family: var(--font-releway);
+    font-style: normal; font-weight: 300;
+    font-size: 25px; line-height: 33px;
+    text-align: center; letter-spacing: 0.02em;
+    color: var(--color--black-dark);
+    margin-bottom: 94px;
+  }
+}
+
+@media (max-width: 919px) {
+  .box{
+    .title{
+      margin: 15px 0 15px 0;  font-size: 25px;
+    }
+    .text{
+      font-size: 19px; margin-bottom: 35px;
+    }
+  }
+}

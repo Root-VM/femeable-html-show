@@ -1,0 +1,31 @@
+.box{
+  display: flex; flex-direction: column; width: 100%;
+  box-sizing: border-box; margin-top: 35px;
+  .text{
+    font-family: var(--font-releway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color--black);
+    margin-bottom: 20px;
+  }
+  .radioGroup{
+    display: flex; align-items: center; justify-content: space-between;
+    width: 100%; position: relative; margin-bottom: 45px;
+    >div:last-child{
+      position: absolute; height: 100%; right: -30px; top: 0;
+      display: flex; align-items: center;
+    }
+  }
+
+  .inputLine{
+    position: relative; width: 100%; box-sizing: border-box; margin-bottom: 65px;
+    >div:last-child{
+      position: absolute; height: 100%; right: -30px; top: 0;
+      display: flex; align-items: center;
+    }
+  }
+}

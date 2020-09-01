@@ -1,0 +1,17 @@
+.box{
+  list-style: none; display: flex; flex-direction: row-reverse; align-items: center;
+  justify-content: flex-start; padding: 0; margin: 0;
+  li{
+    padding: 0; margin: 0;
+    img{
+      filter: invert(81%) sepia(14%) saturate(0%) hue-rotate(151deg) brightness(99%) contrast(89%);
+      cursor: pointer; height: 35px; width: auto;
+    }
+    &:hover img, &:hover ~ li img{
+      filter: invert(73%) sepia(61%) saturate(839%) hue-rotate(357deg) brightness(99%) contrast(106%);
+    }
+    &.active img{
+      filter: invert(73%) sepia(61%) saturate(839%) hue-rotate(357deg) brightness(99%) contrast(106%);
+    }
+  }
+}

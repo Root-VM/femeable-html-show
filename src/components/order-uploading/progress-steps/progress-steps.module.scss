@@ -1,0 +1,53 @@
+.steps{
+  list-style: none; display: flex; justify-content: space-between;
+  width: 100%; margin-bottom: 110px; padding: 0;
+  li{
+    display: flex; align-items: center; width: 100%;
+    .point{
+      background: rgba(255, 86, 10, 0.3);
+      height: 50px; width: 50px; border-radius: 50px;
+      min-width: 50px;
+      position: relative;
+      >p{
+        font-family: var(--font-releway);
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        width: 200px;
+        color: var(--color--black);
+        position: absolute; top: calc(100% + 30px); left: -73px;
+      }
+    }
+    .line{
+      width: 100%; height: 1px; margin: 0 9px;
+      background: rgba(255, 86, 10, 0.3);
+    }
+
+    &.active .point{
+      background: var(--color--orange); position: relative;
+      &:before{
+        content: ''; background-image: url("/static/img/svg/checked.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: cover; width: 14px; height: 11px;
+        top: 19px; left: 17px;
+      }
+    }
+    &:last-child {
+      width: fit-content;
+      .line{
+        display: none;
+      }
+    }
+  }
+
+  &.progress{
+    .active  + li:not(.active) div:first-child{
+      box-shadow: 0 0 0 10px rgba(255, 86, 10, 0.3);
+      background: #FF560A;
+    }
+  }
+}

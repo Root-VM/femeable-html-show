@@ -1,0 +1,90 @@
+.box{
+  margin-bottom: 170px;
+  h4{
+    width: 100%; font-family: var(--font-releway); font-style: normal; font-weight: 600;
+    font-size: 40px; line-height: 160%; color: var(--color--black);
+    margin-bottom: 70px; text-align: center; margin-top: 0;
+  }
+
+  .slider{
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;
+    position: relative; max-width: 995px; margin: 0 auto;
+    .imgGroup{
+        position: relative; margin: 60px 60px 50px 0;
+        img{
+          border-radius: 280px; box-shadow: 0 0 20px 20px rgb(113 113 113 / 19%);
+        }
+        &:before{
+          content: url("/static/img/polygon.png"); position: absolute; top: -60px;
+          left: 35px; z-index: -1;
+        }
+        &:after{
+          content: ''; height: 280px; width: 280px; border: 2px solid var(--color--white);
+          border-radius: 280px; position: absolute; top: -20px; left: -20px;
+        }
+
+      p{
+        font-family: var(--font-releway); font-style: normal; font-weight: bold;
+        font-size: 28px; line-height: 33px; color: var(--color--orange);
+        position: absolute; top: 195px; left: 165px; white-space: nowrap;
+        z-index: 1;
+      }
+    }
+
+    >p {
+      position: relative; font-family: var(--font-releway); font-style: normal;
+      font-weight: 300; font-size: 18px; line-height: 160%;
+      color: var(--color--black); max-width: 532px; margin-left: 107px;
+      margin-bottom: 50px;
+      img{
+        position: absolute; z-index: -1;
+        top: -40px; left: -55px;
+      }
+    }
+
+    .navigation{
+      display: flex; justify-content: center; width: 100%;
+      span{
+        cursor:pointer; width: 30px; height: 2px; background: rgba(255, 86, 10, 0.4);;
+        margin-right: 12px;
+
+        &.active{
+          background: var(--color--orange);
+        }
+      }
+    }
+
+    .controls{
+      .next{
+        position: absolute; bottom: 40px; right: 0; cursor: pointer; background: var(--color--orange);
+        height: 35px; width: 35px; border-radius: 35px; display: flex; align-items: center; justify-content: center;
+        box-shadow: 0px -3.9px 106.4px rgba(16, 9, 4, 0.41), 0px -0.6px 22px rgba(16, 9, 4, 0.2), 0px -0.1px 8.05px rgba(16, 9, 4, 0.1);
+      }
+    }
+  }
+}
+
+@media (max-width: 1119px) {
+  .box .slider{
+    justify-content: center;
+    >p{
+      margin-left: 0; max-width: 700px;
+    }
+  }
+}
+@media (max-width: 919px) {
+  .box{
+    margin-bottom: 120px;
+    h4{
+      font-size: 29px; margin-bottom: 30px;
+    }
+    .slider{
+      .imgGroup p{
+        white-space: normal; font-size: 25px;
+      }
+      >p{
+        font-size: 16px;
+      }
+    }
+  }
+}

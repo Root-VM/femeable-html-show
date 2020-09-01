@@ -1,0 +1,23 @@
+.box{
+  display: flex; flex-direction: column; width: 100%;
+  box-sizing: border-box; margin-top: 35px;
+
+  .inputs{
+    > *{
+      margin-bottom: 25px;
+    }
+  }
+
+  >p{
+    font-family: var(--font-releway);
+    font-style: normal; font-weight: 600;
+    font-size: 18px; line-height: 21px;
+    text-align: center; width: 100%;
+    letter-spacing: 0.02em; margin: 10px 0 20px 0;
+    color: var(--color--black);
+  }
+
+  .upload{
+    margin-bottom: 45px;
+  }
+}

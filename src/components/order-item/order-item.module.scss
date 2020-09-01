@@ -1,0 +1,106 @@
+.box{
+  width: 100%; max-width: 896px; margin: 0 auto;
+  background: var(--color--white); box-sizing: border-box;
+  box-shadow: 0px -2px 348px rgba(0, 0, 0, 0.04), 0px -0.837102px 77.7304px rgba(0, 0, 0, 0.0267973),
+  0px -0.358753px 23.1424px rgba(0, 0, 0, 0.0212988);
+  border-radius: 5px; border-top: 45px solid var(--color--yellow);
+  padding:  30px 82px 75px 82px;
+  display: flex; flex-direction: column; align-items: center;
+  h2{
+    font-family: var(--font-releway);
+    font-style: normal; font-weight: 500;
+    font-size: 30px; line-height: 35px;
+    text-align: center; letter-spacing: 0.02em;
+    color: var(--color--black); margin-bottom: 50px;
+  }
+
+  .photo{
+    display: flex; flex-direction: column; align-items: center;
+    margin-bottom: 30px;
+    >div:first-child{
+      border: 1px solid var(--color--black); box-sizing: border-box; margin-bottom: 15px;
+      border-radius: 100%; overflow: hidden; padding: 6px; display: flex; align-items: center;
+      justify-content: center;
+      img{
+        height: 152px; width: auto; border-radius: 152px;
+      }
+    }
+    p{
+      font-family: var(--font-releway);
+      font-style: normal; font-weight: normal;
+      font-size: 20px; line-height: 23px;
+      letter-spacing: 0.02em;
+      color: var(--color--black);
+    }
+  }
+
+  .line{
+    display: flex; justify-content: space-between; flex-wrap: wrap;
+    width: 100%; margin-bottom: 20px;
+    >div{
+      display: flex; width: 100%; max-width: 230px;
+    }
+  }
+
+  .line > div strong, .description strong{
+    width: 151px;
+    font-family: var(--font-releway);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+    color: var(--color--black);
+  }
+  .line > div p, .description p{
+    font-family: var(--font-releway);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: var(--color--black);
+  }
+
+
+  .description{
+    margin: 20px 0 60px 0;
+    display: flex; width: 100%;
+    strong{
+      min-width: 100px; margin-right: 10px;
+    }
+    p{
+      max-width: 544px;
+    }
+  }
+
+  .btnGroup{
+    display: flex; justify-content: space-between; gap: 20px;
+    flex-wrap: wrap; width: 100%; max-width: 733px;
+    button{
+      width: 100%; max-width: 330px;
+    }
+  }
+
+  &.green{
+    border-color: var(--color--green);
+  }
+  &.yellow{
+    border-color: var(--color--yellow);
+  }
+  &.red{
+    border-color: var(--color--red);
+  }
+}
+
+@media (max-width: 919px) {
+  .box{
+    padding: 5px 20px 15px 20px;
+    h2{
+      font-size: 29px; margin-bottom: 20px; text-align: left;
+    }
+    .btnGroup{
+      justify-content: space-around;
+    }
+  }
+}

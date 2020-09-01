@@ -1,0 +1,69 @@
+.box{
+  display: flex; align-items: center; z-index: 15;
+  .drop{
+    position: relative; margin-right: 35px; outline: none;
+
+    img{
+      margin: 0 0 2px 5px; transition: .3s;
+      height: 6px; transform: rotate(180deg);
+    }
+    p{
+      font-family: var(--font-releway);
+      font-style: normal; font-weight: normal;
+      font-size: 14px; line-height: 16px;
+      letter-spacing: 0.02em; transition: .3s;
+      color: var(--color--black); cursor: pointer;
+      &:hover{
+        color: var(--color--orange); transition: .3s;
+      }
+    }
+    .list{
+      position: absolute; top: 35px; left: 0; display: none;
+      p{
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  .input{
+    position: relative;
+    input{
+      border: none;
+      box-sizing: border-box; height: 30px;
+      box-shadow: 0px -2px 70px rgba(18, 15, 14, 0.08), 0px -0.835552px 49.5699px rgba(19, 16, 14, 0.0575083);
+      border-radius: 50px; outline: none; transition: .3s;
+      padding: 0 ; max-width: 0;
+    }
+    img{
+      position: absolute; top: 3px;  left: 0;
+      transition: .3s; cursor: pointer;
+    }
+  }
+
+
+  &.open{
+
+    .input {
+      input{
+        padding: 0 10px 0 50px; max-width: 223px;
+        border: 1px solid var(--color--orange);
+      }
+      img{
+        left: 20px;
+      }
+    }
+
+    .drop{
+      .title{
+        color: var(--color--orange);
+      }
+      .list{
+        display: block;
+      }
+      img{
+        filter: invert(40%) sepia(81%) saturate(1369%) hue-rotate(348deg) brightness(102%) contrast(101%);
+        transform: rotate(0);
+      }
+    }
+  }
+}

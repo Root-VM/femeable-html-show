@@ -1,0 +1,30 @@
+.box{
+  box-sizing: border-box; width: 100%; background: var(--color--white);
+  box-shadow: 0px -2px 348px rgba(0, 0, 0, 0.04), 0px -0.837102px 77.7304px rgba(0, 0, 0, 0.0267973),
+              0px -0.358753px 23.1424px rgba(0, 0, 0, 0.0212988);
+  border-radius: 5px; padding: 45px 60px;
+
+  .inputs{
+    display: grid; grid-template-columns: 1fr 1fr;  grid-gap: 25px;
+    margin-bottom: 95px;
+  }
+
+  .btnGroup{
+    display: grid; grid-template-columns: 1fr 1fr;  grid-gap: 25px;
+  }
+}
+
+@media (max-width: 919px) {
+  .box{
+    padding: 30px 25px; max-width: 460px;
+    .inputs{
+      grid-template-columns: 1fr; grid-gap: 15px; margin-bottom: 35px;
+    }
+    .btnGroup{
+      display: flex; flex-wrap: wrap; justify-content: space-around; grid-gap: 10px;
+      button{
+        width: 100%;
+      }
+    }
+  }
+}

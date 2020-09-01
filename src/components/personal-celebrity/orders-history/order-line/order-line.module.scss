@@ -1,0 +1,121 @@
+.box{
+  display: flex; justify-content: space-between; padding: 30px 40px;
+  background: #FFFFFF; width: 100%; align-items: center;
+  border: 1px solid var(--color--yellow);
+  box-sizing: border-box;
+  box-shadow: 0px -2px 348px rgba(0, 0, 0, 0.04), 0px -0.837102px 77.7304px rgba(0, 0, 0, 0.0267973),
+  0px -0.358753px 23.1424px rgba(0, 0, 0, 0.0212988);
+  border-radius: 5px; margin-bottom: 40px;
+
+  .photo{
+    display: flex; flex-direction: column; align-items: center;
+    margin-right: 38px;
+    >div:first-child{
+      border: 1px solid var(--color--black); box-sizing: border-box; margin-bottom: 10px;
+      border-radius: 100%; overflow: hidden; padding: 3px; display: flex; align-items: center;
+      justify-content: center;
+      img{
+        height: 75px; width: auto; border-radius: 75px;
+      }
+    }
+    p{
+      font-family: var(--font-releway);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.02em;
+      color: var(--color--black);
+    }
+  }
+
+  .time{
+    font-family: var(--font-releway);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color--black);
+    max-width: 94px;
+  }
+  .price{
+    font-family: var(--font-releway);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color--black);
+  }
+  .status{
+    font-family: var(--font-releway);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color--yellow);
+  }
+  .rating{
+    min-width: 82px;
+    ul li img{
+      height: 16.5px;
+    }
+  }
+  .arrow{
+    border-top: 2px solid var(--color--black);
+    border-left: 2px solid var(--color--black);
+    transform: rotate(133deg) skew(-4deg); transition: .3s;
+    height: 10px; width: 10px; cursor: pointer; position: relative;
+    .arrowHover{
+      border-top: 2px solid var(--color--yellow);
+      border-left: 2px solid var(--color--yellow);
+      transform: rotate(0deg) skew(-4deg); transition: .3s;
+      height: 10px; width: 10px; cursor: pointer; opacity: 0;
+      position: absolute; top: -2px; left: -2px;
+    }
+
+    &:hover{
+      border-color: rgba(255, 0, 0, 0); transition: .3s;
+      .arrowHover{
+        opacity: 1; transition: .3s;
+      }
+    }
+  }
+
+
+  //colors
+  &.green{
+    border-color: var(--color--green);
+    .status{ color: var(--color--green); }
+    .arrow .arrowHover{ border-color: var(--color--green); }
+  }
+  &.yellow{
+    border-color: var(--color--yellow);
+    .status{ color: var(--color--yellow); }
+    .arrow .arrowHover{ border-color: var(--color--yellow); }
+  }
+  &.red{
+    border-color: var(--color--red);
+    .status{ color: var(--color--red); }
+    .arrow .arrowHover{ border-color: var(--color--red); }
+  }
+}
+
+@media (max-width: 919px) {
+  .box{
+    margin-bottom: 10px; padding: 10px 20px;  flex-wrap: wrap;
+    gap: 10px; justify-content: space-around;
+    .photo{
+      margin-right: 0;
+    }
+    .arrow{
+      display: none;
+    }
+  }
+}

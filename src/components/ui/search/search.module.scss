@@ -1,0 +1,78 @@
+.orange{
+  background: var(--color--orange); width: 100%; position: relative; border-radius: 40px; overflow: hidden;
+  box-shadow: 0px -2px 70px rgba(18, 15, 14, 0.08), 0px -0.83px 49.5699px rgba(19, 16, 14, 0.05);
+
+  img{
+    position: absolute; top: 14px; left: 28px;
+    filter: brightness(4000%); cursor: pointer;
+  }
+
+  input, input::placeholder{
+    width: 100%; font-family: var(--font-releway); font-style: normal;
+    font-weight: 500; font-size: 22px; line-height: 26px;  border: none;
+    color: var(--color--white); padding: 0 20px 0 85px; min-height: 65px;
+    background: none; outline: none; box-sizing: border-box;
+  }
+  input::placeholder{
+    padding: 0;
+  }
+
+}
+
+.white{
+  background: var(--color--white); width: 100%; position: relative; border-radius: 40px; overflow: hidden;
+  box-shadow: 0px -2px 70px rgba(18, 15, 14, 0.08), 0px -0.83px 49.5699px rgba(19, 16, 14, 0.05);
+
+  img{
+    position: absolute; top: 14px; left: 28px;
+    cursor: pointer;
+    filter: invert(47%) sepia(43%) saturate(3715%) hue-rotate(348deg) brightness(100%) contrast(102%);
+  }
+
+  input, input::placeholder{
+    width: 100%; font-family: var(--font-releway); font-style: normal;
+    font-weight: 500; font-size: 22px; line-height: 26px;  border: none;
+    color: var(--color--orange); padding: 0 20px 0 85px; min-height: 65px;
+    background: none; outline: none; box-sizing: border-box; transition: .3s;
+  }
+  input::placeholder{
+    padding: 0;
+  }
+  input:active, input:focus, input:hover{
+    background: var(--color--orange); transition: .3s;
+    color: var(--color--white);
+    &::placeholder{
+      color: var(--color--white);
+    }
+    & ~ img{
+      filter: none;
+    }
+  }
+
+  &:hover{
+    input{
+      background: var(--color--orange); transition: .3s;
+      color: var(--color--white);
+      &::placeholder{
+        color: var(--color--white);
+      }
+      & ~ img{
+        filter: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 919px) {
+  .orange, .white{
+    input{
+      font-size: 19px; min-height: 55px; padding-left: 65px;
+      &::placeholder{
+        font-size: 19px;
+      }
+    }
+    img{
+      height: 33px; top: 12px; left: 19px;
+    }
+  }
+}

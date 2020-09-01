@@ -1,0 +1,73 @@
+.box{
+  position: relative;
+
+  p{
+    position: absolute; bottom: calc(100% + 20px); left: -42px;
+    font-family: var(--font-releway); font-style: normal;
+    font-weight: 500; font-size: 14px; line-height: 125%;
+    color: var(--color--white); background: var(--color--blue);
+    border-radius: 40px; padding: 32px 46px; box-sizing: border-box;
+    max-width: 236px; width: max-content;
+    display: none;
+    &:before{
+      content: ''; position: absolute; left: 40px; bottom: -16px; border-width: 16px 10px 0 10px;
+      border-color: var(--color--blue) transparent transparent transparent;
+      width: 0; height: 0; border-style: solid;
+    }
+  }
+
+  img{
+    cursor: pointer;
+  }
+
+  img:hover ~ p{
+    display: flex;
+  }
+
+  // size
+  &.small{
+    p{
+      padding: 15.5px 18.5px; font-size: 12px;
+      line-height: 12px; left: -21px;
+      &:before{
+        left: 20px; border-width: 12px 8px 0 8px;
+        bottom: -12px
+      }
+    }
+  }
+
+  // color
+  &.blue p{
+    background: var(--color--blue);
+    &:before{
+      border-color: var(--color--blue) transparent transparent transparent;
+    }
+  }
+
+  &.green p{
+     background: var(--color--green);
+    &:before{
+      border-color: var(--color--green) transparent transparent transparent;
+    }
+  }
+
+  &.red p{
+    background: var(--color--red) ;
+    &:before{
+      border-color: var(--color--red) transparent transparent transparent;
+    }
+  }
+
+  &.yellow p{
+    background: var(--color--yellow);
+    &:before{
+      border-color: var(--color--yellow) transparent transparent transparent;
+    }
+  }
+
+}
+@media (max-width: 1119px) {
+  .box{
+    display: none!important;
+  }
+}

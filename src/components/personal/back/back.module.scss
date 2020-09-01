@@ -1,0 +1,14 @@
+.back{
+  display: flex; align-items: center;
+  font-family: var(--font-releway); width: fit-content;
+  font-style: normal; font-weight: 300;
+  font-size: 18px; line-height: 21px;
+  letter-spacing: 0.02em; color: var(--color--black);
+  outline: none; transition: .3s; cursor: pointer;
+  &:hover{
+    color: var(--color--orange); transition: .3s;
+  }
+  span{
+    margin: -4px 10px 0 0;
+  }
+}

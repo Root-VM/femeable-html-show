@@ -1,0 +1,48 @@
+.box{
+  display: flex; flex-direction: column; width: 100%; max-width: 983px;
+  margin: 0 auto; background: var(--color--white);
+  box-shadow: 0px -2px 348px rgba(0, 0, 0, 0.04), 0px -0.837102px 77.7304px rgba(0, 0, 0, 0.0267973),
+              0px -0.358753px 23.1424px rgba(0, 0, 0, 0.0212988);
+  border-radius: 5px; padding: 55px 126px; box-sizing: border-box;
+  h2{
+    font-family: var(--font-releway); font-style: normal;
+    font-weight: 500; font-size: 30px; width: 100%;
+    line-height: 35px; text-align: center; margin-bottom: 35px;
+    letter-spacing: 0.02em; color: var(--color--black);
+  }
+  img{
+    width: 100%; height: auto; margin: 0 auto 15px auto;
+  }
+  a{
+    text-decoration: none; font-family: var(--font-releway);
+    font-style: normal; font-weight: 300;
+    font-size: 16px; line-height: 19px; cursor: pointer;
+    letter-spacing: 0.02em;
+    color: var(--color--black); transition: .3s;
+    margin-bottom: 55px;
+    &:hover{
+      color: var(--color--orange); transition: .3s;
+    }
+  }
+  .btnGroup{
+    display: grid; grid-template-columns: 1fr 1fr; grid-gap: 70px;
+  }
+}
+
+@media (max-width: 919px) {
+  .box{
+    padding: 20px 30px;
+    >a {
+      margin-bottom: 30px;
+    }
+    h2{
+      font-size: 29px;
+    }
+    .btnGroup{
+      display: flex; flex-wrap: wrap; justify-content: space-around; gap:20px;
+      button{
+        max-width: 330px;
+      }
+    }
+  }
+}

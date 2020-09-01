@@ -1,0 +1,15 @@
+.content{
+  margin: 60px 0;
+  .back{
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 919px) {
+  .content{
+    margin: 30px 0;
+    .back{
+      margin-bottom: 25px;
+    }
+  }
+}

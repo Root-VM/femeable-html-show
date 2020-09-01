@@ -1,0 +1,40 @@
+.box{
+  width: 100%; max-width: 810px; display: flex; flex-direction: column;
+  .line{
+    display: flex; align-items: flex-end; justify-content: space-between;
+    margin-bottom: 60px;
+    h2{
+      font-family: var(--font-releway);
+      font-style: normal; font-weight: 500;
+      font-size: 30px; line-height: 35px;
+      letter-spacing: 0.02em; margin: 0;
+      color: var(--color--black);
+    }
+    >div:nth-child(2){
+      margin-right: 34px;
+    }
+  }
+  .group{
+    margin-bottom: 40px;
+    >p{
+      font-family: var(--font-releway);
+      font-style: normal; font-weight: 600;
+      font-size: 20px; line-height: 23px;
+      letter-spacing: 0.02em; margin-bottom: 20px;
+      color: var(--color--black);
+    }
+  }
+}
+
+@media (max-width: 919px) {
+  .box{
+    .line{
+      >div:nth-child(2){
+        display: none;
+      }
+    }
+    .group{
+      margin-bottom: 10px;
+    }
+  }
+}
