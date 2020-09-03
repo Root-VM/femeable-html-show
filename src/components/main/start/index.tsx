@@ -10,7 +10,13 @@ export const Start: React.FC = () => {
         <h3>Enjoy the video with your idol on your important day</h3>
         <Button tagType="orange">Find your star</Button>
       </div>
-      <img src="/static/img/collage.png" alt="collage" />
+
+      <div className={css.collage}>
+        <div><img src="/static/img/gifs/triangle.png" alt="collage" /></div>
+        <div><img src="/static/img/gifs/triangle.png" alt="collage" /></div>
+        <div><img src="/static/img/gifs/triangle2.png" alt="collage" /></div>
+        <div><img src="/static/img/gifs/triangle.png" alt="collage" /></div>
+      </div>
     </div>
   );
 };
