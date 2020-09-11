@@ -67,3 +67,37 @@
     }
   }
 }
+@media (max-width: 919px) {
+  .box{
+    margin-right: 25px;
+  }
+}
+
+@media (max-width: 719px) {
+ .box{
+   .drop .title, .list p{
+     font-size: 12px;
+     line-height: 14px;
+   }
+
+   .drop{
+     margin-right: 10px;
+     .list{
+       top: 28px;
+     }
+   }
+
+   &.open{
+    margin-right: 0;
+     .input {
+       input{
+         padding: 0 10px 0 30px; max-width: 100px;
+         border: 1px solid var(--color--orange);
+       }
+       img{
+         left: 2px;
+       }
+     }
+   }
+ }
+}

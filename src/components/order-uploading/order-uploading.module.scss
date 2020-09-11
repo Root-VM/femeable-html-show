@@ -137,9 +137,15 @@
 }
 @media (max-width: 919px) {
   .box{
-    padding: 20px 30px;
+    padding: 20px 25px; border-top-width: 20px;
     .group{
       flex-wrap: wrap; justify-content: space-around; gap: 20px; margin-bottom: 40px;
+      .photoGroup{
+        max-width: 240px; height: 250px;
+        img:first-child{
+          width: auto; height: 263px;
+        }
+      }
     }
     .line{
       gap: 20px;
@@ -150,11 +156,12 @@
         width: 100%; max-width: 120px;
       }
     }
-    .steps{
+    .info{
       display: none;
     }
     .btnGroup{
-      gap: 20px; justify-content: center;
+      gap: 10px; justify-content: center; max-width: 240px;
+      flex-direction: column-reverse;
     }
   }
 }

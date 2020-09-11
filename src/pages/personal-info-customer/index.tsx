@@ -5,7 +5,7 @@ import css from './personal-info-customer.module.scss';
 import { MenuPersonal } from '../../components/layout/menu-personal';
 import { Back } from '../../components/personal/back';
 import { UserPhotoUpload } from '../../components/personal/user-photo-upload';
-import { InformationEdit } from '../../components/personal/information-edit';
+import { History } from '../../components/personal/history';
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export default function PersonalInfoCustomer() {
@@ -33,11 +33,11 @@ export default function PersonalInfoCustomer() {
         </div>
 
         <div className={css.content}>
-          <h2>Personal Information</h2>
+          {/* <h2>Personal Information</h2> */}
 
-          <InformationEdit />
+          {/* <InformationEdit /> */}
           {/* <PasswordEdit /> */}
-          {/* <History /> */}
+          <History />
         </div>
       </div>
     </div>

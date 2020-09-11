@@ -50,12 +50,18 @@
 }
 
 @media (max-width: 919px) {
-  .element .box{
-    h3{
-      font-size: 29px;
-    }
-    .inputs input{
-      height: 40px; width: 40px;
+  .element {
+    padding: 10px 20px;
+    .box{
+      h3{
+        font-size: 20px;
+      }
+      .text{
+        font-size: 16px;
+      }
+      .inputs input{
+        height: 30px; width: 30px;
+      }
     }
   }
 }

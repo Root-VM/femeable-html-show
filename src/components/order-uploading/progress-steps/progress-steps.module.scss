@@ -51,3 +51,39 @@
     }
   }
 }
+
+@media (max-width: 919px) {
+  .steps{
+    margin-bottom: 70px; margin-top: 0;
+    li{
+      .point{
+        height: 20px;
+        width: 20px;
+        border-radius: 20px;
+        min-width: 20px;
+        >p{
+          font-size: 12px; line-height: 14px;
+          top: calc(100% + 10px); left: -90px;
+        }
+      }
+      .line{
+        margin: 0;
+      }
+      &.active .point{
+        &::before{
+          background-size: contain;
+          width: 10px;
+          height: 16px;
+          top: 6px;
+          left: 5px;
+        }
+      }
+    }
+
+    &.progress{
+      .active  + li:not(.active) div:first-child{
+        box-shadow: 0 0 0 5px rgba(255, 86, 10, 0.3);
+      }
+    }
+  }
+}

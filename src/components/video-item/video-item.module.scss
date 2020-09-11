@@ -36,7 +36,11 @@
     transition: .3s;
   }
 
-  &:hover{
+
+}
+
+@media (min-width: 1142px) {
+  .box:hover{
     transition: .3s; border-radius: 5px; max-width: 275px; position: relative;
     box-shadow: 0px -2px 70px rgba(18, 15, 14, 0.08), 0px -0.83px 49.56px rgba(19, 16, 14, 0.057);
     .img{

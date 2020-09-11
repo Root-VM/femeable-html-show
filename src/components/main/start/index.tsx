@@ -12,10 +12,26 @@ export const Start: React.FC = () => {
       </div>
 
       <div className={css.collage}>
-        <div><img src="/static/img/gifs/triangle.png" alt="collage" /></div>
-        <div><img src="/static/img/gifs/triangle.png" alt="collage" /></div>
-        <div><img src="/static/img/gifs/triangle2.png" alt="collage" /></div>
-        <div><img src="/static/img/gifs/triangle.png" alt="collage" /></div>
+        <div className={css.videoWrap}>
+          <video autoPlay muted loop>
+            <source src="/static/img/gifs/video1.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div className={css.videoWrap}>
+          <video autoPlay muted loop>
+            <source src="/static/img/gifs/video3.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div className={css.videoWrap}>
+          <video autoPlay muted loop>
+            <source src="/static/img/gifs/video2.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div className={css.videoWrap}>
+          <video autoPlay muted loop>
+            <source src="/static/img/gifs/video4.mp4" type="video/mp4" />
+          </video>
+        </div>
       </div>
     </div>
   );

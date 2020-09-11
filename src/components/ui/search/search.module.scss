@@ -1,7 +1,7 @@
 .orange{
   background: var(--color--orange); width: 100%; position: relative; border-radius: 40px; overflow: hidden;
   box-shadow: 0px -2px 70px rgba(18, 15, 14, 0.08), 0px -0.83px 49.5699px rgba(19, 16, 14, 0.05);
-
+  display: flex; align-items: center;
   img{
     position: absolute; top: 14px; left: 28px;
     filter: brightness(4000%); cursor: pointer;
@@ -14,7 +14,7 @@
     background: none; outline: none; box-sizing: border-box;
   }
   input::placeholder{
-    padding: 0;
+    padding: 0; line-height: 65px; opacity: 1;
   }
 
 }
@@ -22,7 +22,7 @@
 .white{
   background: var(--color--white); width: 100%; position: relative; border-radius: 40px; overflow: hidden;
   box-shadow: 0px -2px 70px rgba(18, 15, 14, 0.08), 0px -0.83px 49.5699px rgba(19, 16, 14, 0.05);
-
+  display: flex; align-items: center;
   img{
     position: absolute; top: 14px; left: 28px;
     cursor: pointer;
@@ -36,7 +36,7 @@
     background: none; outline: none; box-sizing: border-box; transition: .3s;
   }
   input::placeholder{
-    padding: 0;
+    padding: 0; line-height: 65px; opacity: 1;
   }
   input:active, input:focus, input:hover{
     background: var(--color--orange); transition: .3s;
@@ -66,13 +66,14 @@
 @media (max-width: 919px) {
   .orange, .white{
     input{
-      font-size: 19px; min-height: 55px; padding-left: 65px;
+      font-size: 14px;  padding-left: 50px; min-height: 37px;
       &::placeholder{
-        font-size: 19px;
+       font-size: 14px;
       }
     }
     img{
-      height: 33px; top: 12px; left: 19px;
+      top: 7px; left: 19px;
+      height: 25px; width: 25px;
     }
   }
 }

@@ -26,11 +26,16 @@
   }
 }
 
-@media (max-width: 919px) {
+@media (max-width: 719px) {
   .box{
+    .group >p{
+      font-size: 16px; margin-bottom: 10px;
+    }
     .line{
-      >div:nth-child(2){
-        display: none;
+      align-items: center; margin-bottom: 40px;
+      h2{
+        font-size: 18px;
+        line-height: 21px; font-weight: bold;
       }
     }
     .group{

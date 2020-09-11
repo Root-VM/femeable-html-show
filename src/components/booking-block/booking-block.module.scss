@@ -131,6 +131,7 @@
 
     .textarea{
       width: 100%;
+      max-width: 855px;
       textarea{
         margin-bottom: 10px;
       }
@@ -164,6 +165,9 @@
 @media (max-width: 919px) {
   .box{
     padding: 25px 50px ;
+    h3{
+      font-size: 18px;
+    }
     .element{
       margin-bottom: 50px;
     }

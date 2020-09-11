@@ -95,12 +95,44 @@
 
 @media (max-width: 919px) {
   .box{
-    padding: 5px 20px 15px 20px;
+    padding: 5px 20px 15px 20px; border-top-width: 20px;
     h2{
-      font-size: 29px; margin-bottom: 20px; text-align: left;
+      font-size: 16px; text-align: center;
+      line-height: 20px; color: var(--color--black-dark);
+      margin-top: 5px; margin-bottom: 15px;
+    }
+    .photo {
+      margin-bottom: 20px;
+      >div:first-child{
+        padding: 4px; margin-bottom: 8px;
+        img{
+          height: 70px; width: 70px;
+        }
+      }
+      p{
+        font-size: 14px;
+      }
+    }
+    .line{
+      margin-bottom: 5px;
+      > div{
+        strong, p{
+          font-size: 14px; line-height: normal; margin-bottom: 5px;
+        }
+        strong{
+          width: 111px;
+        }
+      }
+    }
+    .description{
+      margin-top: 0; margin-bottom: 35px;
+      strong, p{
+        font-size: 14px; line-height: normal; margin-bottom: 5px;
+      }
     }
     .btnGroup{
-      justify-content: space-around;
+      justify-content: space-around; max-width: 240px; flex-direction: column-reverse;
+      gap: 10px;
     }
   }
 }

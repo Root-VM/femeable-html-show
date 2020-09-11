@@ -70,3 +70,14 @@
     }
   }
 }
+
+@media (max-width: 919px)  {
+  .dropdown{
+    .title{
+      height: 32px;
+    }
+    .items li a {
+      height: 32px;
+    }
+  }
+}

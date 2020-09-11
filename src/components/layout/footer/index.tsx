@@ -42,10 +42,7 @@ export const Footer: React.FC = () => {
         </div>
         <div>
           <Link href="/">
-            <a>Terms & Conditions</a>
-          </Link>
-          <Link href="/">
-            <a>Impressum</a>
+            <a>Disclaimer</a>
           </Link>
           <Link href="/">
             <a>Impressum</a>

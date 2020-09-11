@@ -26,11 +26,15 @@
 }
 @media (max-width: 919px) {
   .element{
+    padding: 20px;
     h3{
-      font-size: 29px;
+      font-size: 20px; margin-bottom: 0;
     }
     .text {
-      margin-bottom: 30px;
+      margin-bottom: 30px; font-size: 14px;
+    }
+    button{
+      max-width: 240px;
     }
   }
 }

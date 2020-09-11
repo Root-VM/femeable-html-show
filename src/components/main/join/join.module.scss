@@ -1,9 +1,9 @@
 .box{
   display: flex; flex-direction: column; justify-content: center;
   align-items: center; width: 100vw; min-height: 550px;
-  background-image: url("/static/img/bg.png"); background-repeat: no-repeat;
+  background-image: url("/static/img/bg.jpg"); background-repeat: no-repeat;
   background-size: cover; background-position: center; margin-bottom: 170px;
-  padding: 0 20px; box-sizing: border-box;
+  padding: 0 20px; box-sizing: border-box; background-attachment: fixed;
   h4{
     font-family: var(--font-releway);
     font-style: normal;
@@ -30,12 +30,12 @@
 }
 @media (max-width: 919px) {
   .box{
-    margin-bottom: 120px; min-height: 440px;
+    margin-bottom: 80px; min-height: 440px;
     h4{
-      font-size: 29px; line-height: 40px;
+      font-size: 22px; line-height: 40px;
     }
     p{
-      font-size: 19px; margin-bottom: 40px;
+      font-size: 14px; margin-bottom: 40px;
     }
   }
 }

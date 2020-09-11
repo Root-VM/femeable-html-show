@@ -12,15 +12,21 @@ export const CelebrityVideo: React.FC = () => {
 
       <div className={css.icons}>
         <div>
-          <img src="/static/img/svg/pointer.svg" alt="icon" />
+          <div className={css.icon}>
+            <img src="/static/img/svg/pointer.svg" alt="icon" />
+          </div>
           <p>Choose celebrity and fill in the form</p>
         </div>
         <div>
-          <img src="/static/img/svg/time.svg" alt="icon" />
+          <div className={css.icon}>
+            <img src="/static/img/svg/time.svg" alt="icon" />{' '}
+          </div>
           <p>Choose celebrity and fill in the form</p>
         </div>
         <div>
-          <img src="/static/img/svg/nexus.svg" alt="icon" />
+          <div className={css.icon}>
+            <img src="/static/img/svg/nexus.svg" alt="icon" />{' '}
+          </div>
           <p>Choose celebrity and fill in the form</p>
         </div>
       </div>
@@ -30,7 +36,9 @@ export const CelebrityVideo: React.FC = () => {
       </div>
 
       <div className={css.iconGroup}>
-        <img src="/static/img/svg/star.svg" alt="icon" />
+        <div className={css.icon}>
+          <img src="/static/img/svg/star.svg" alt="icon" />{' '}
+        </div>
         <p>Choose celebrity and fill in the form</p>
       </div>
     </div>

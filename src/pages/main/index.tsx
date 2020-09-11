@@ -17,22 +17,22 @@ export default function MainPage() {
         <Header />
         <Start />
 
+        <h4 className={css.text}>
+          <img src="/static/img/svg/logo-icon.svg" alt="logo" />
+          Recommended
+        </h4>
         <div className={css.line}>
-          <h4>
-            <img src="/static/img/svg/logo-icon.svg" alt="logo" />
-            Recommended
-          </h4>
           <VideoItem />
           <VideoItem />
           <VideoItem />
           <VideoItem />
         </div>
 
+        <h4 className={css.text}>
+          <img src="/static/img/svg/logo-icon.svg" alt="logo" />
+          Newly registered stars
+        </h4>
         <div className={css.line}>
-          <h4>
-            <img src="/static/img/svg/logo-icon.svg" alt="logo" />
-            Newly registered stars
-          </h4>
           <VideoItem />
           <VideoItem />
           <VideoItem />

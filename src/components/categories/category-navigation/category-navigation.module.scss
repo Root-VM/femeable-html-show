@@ -1,6 +1,6 @@
 .box{
   padding: 56px 20px; background-size: cover; background-position: center; background-repeat: no-repeat;
-  background-image: url("/static/img/category-bg.png"); margin-bottom: 100px;
+  background-image: url("/static/img/category-bg.png"); margin-bottom: 30px;
   .element{
     max-width: 1200px; margin: 0 auto;
   }
@@ -42,9 +42,16 @@
 
 @media (max-width: 919px) {
   .box{
-    padding: 25px 20px; margin-bottom: 45px;
+    padding: 15px 15px 25px 15px; margin-bottom: 40px;
+    h4{
+      font-size: 18px; margin-top: 0; margin-bottom: 15px;
+    }
     ul li {
-      min-width: 200px;
+      width: fit-content;
+      max-width: 90px;
+      a{
+        font-size: 16px;
+      }
     }
   }
 }

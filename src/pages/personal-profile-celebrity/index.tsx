@@ -35,7 +35,7 @@ export default function PersonalInfoCustomer() {
         </div>
 
         <div className={css.content}>
-          <h2>Personal Information</h2>
+          {/* <h2>Personal Information</h2> */}
           {/* <InformationEditCelebrity /> */}
           {/* <VideoSetting /> */}
           {/* <PaymentInfo /> */}

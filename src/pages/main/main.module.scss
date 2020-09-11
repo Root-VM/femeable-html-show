@@ -2,24 +2,38 @@
   display: grid; width: 100%; grid-gap: 20px;
   grid-template-columns: repeat(auto-fit ,  255px);
   justify-content: space-between; margin-bottom: 85px;
-  h4{
-    grid-column: 1 / -1;
-    display: flex; align-items: center; margin-bottom: 30px;
-    color: var(--color--orange); font-family: var(--font-releway);
-    font-style: normal; font-weight: bold; font-size: 25px; line-height: 29px;
-    text-align: center;
-    img{
-      margin-right: 10px;
+  overflow: visible;
+}
+
+.text{
+  width: 100%; margin-top: 0;
+  display: flex; align-items: center; margin-bottom: 30px;
+  color: var(--color--orange); font-family: var(--font-releway);
+  font-style: normal; font-weight: bold; font-size: 25px; line-height: 29px;
+  text-align: center;
+  img{
+    margin-right: 10px;
+  }
+}
+
+
+@media (max-width: 1142px) {
+  .line{
+    overflow-y: hidden; overflow-x: auto;
+    scroll-snap-type: x mandatory; grid-template-columns: 255px 255px 255px 255px;
+    >div{
+      scroll-snap-align: center;
     }
   }
 }
 @media (max-width: 919px) {
   .line{
-    justify-content: space-around;
+    grid-gap: 15px;
+    margin-bottom: 40px;
+  }
+  .text{
+    margin-bottom: 20px;
+    font-size: 18px;
   }
 }
-@media (max-width: 519px) {
-  .line{
-    justify-content: center;
-  }
-}
+

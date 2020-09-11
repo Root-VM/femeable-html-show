@@ -119,3 +119,19 @@
     }
   }
 }
+@media (max-width: 719px) {
+  .box{
+    .element{
+      h3{
+        font-size: 18px;
+      }
+      .comments{
+        .line  {
+          .time, .text p{
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

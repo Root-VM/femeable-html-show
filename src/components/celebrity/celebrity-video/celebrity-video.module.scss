@@ -46,3 +46,41 @@
     }
   }
 }
+@media (max-width: 919px) {
+  .box{
+    display: flex; flex-direction: column; padding-top: 50px;
+    .photo, .line{
+      display: none;
+    }
+    .icons{
+      display: flex; flex-direction: column; width: 100%; max-width: 215px;
+      margin: 0 auto;
+    }
+    .iconGroup, .icons >div{
+      flex-direction: row; align-items: flex-start; width: 100%; max-width: 100%;
+      margin-bottom: 48px; position: relative;
+      .icon{
+        position: relative; display: flex; align-items: center; justify-content: center;
+        margin-right: 20px; height: 35px; min-width: 35px; border-radius: 35px; width: 35px;
+        background: var(--color--orange);
+        img{
+          height: 19px;
+          filter: sepia(0); margin: 0;
+        }
+      }
+      p{
+        text-align: left;
+      }
+      &:before{
+        content: ''; height: 66px; position: absolute; top: 24px; left: 18px;
+        width: 1px; background: var(--color--orange);
+      }
+    }
+    .iconGroup{
+      max-width: 215px;
+      &:before{
+        content: none;
+      }
+    }
+  }
+}

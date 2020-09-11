@@ -107,7 +107,7 @@
   }
 }
 
-@media (max-width: 919px) {
+@media screen and (max-width: 919px) and (min-width: 719px) {
   .box{
     margin-bottom: 10px; padding: 10px 20px;  flex-wrap: wrap;
     gap: 10px; justify-content: space-around;
@@ -115,6 +115,19 @@
       margin-right: 0;
     }
     .arrow{
+      display: none;
+    }
+  }
+}
+
+@media  (max-width: 719px) {
+  .box{
+    margin-bottom: 10px; padding: 10px 20px;  flex-wrap: wrap;
+    gap: 10px; justify-content: space-around;
+    .photo{
+      margin-right: 0;
+    }
+    .arrow, .rating, .time{
       display: none;
     }
   }

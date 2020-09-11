@@ -47,12 +47,37 @@
   .box{
     padding: 20px 30px;
     h2{
-      font-size: 29px;
+      font-size: 14px; margin-bottom: 10px; line-height: 22px;
     }
     .line{
       flex-wrap: wrap; justify-content: center; gap: 20px;
       .text button{
         margin: 20px auto 0 auto;
+      }
+      .photo{
+        margin-right: 0; width: 100%; display: grid;
+        grid-template-areas:  "photo  text1"
+                              "photo  text2";
+        grid-template-columns: 60px 1fr;
+        >div:first-child{
+          padding: 3px; margin-bottom: 0;
+          width: fit-content;
+          grid-area: photo;
+          img{
+            height: 38px; width: 38px;
+          }
+        }
+        p{
+          font-size: 12px; line-height: 16px; margin-bottom: 5px;
+          grid-area: text1;
+        }
+
+        ul {
+          grid-area: text2; width: fit-content;
+          li img{
+            height: 16px;
+          }
+        }
       }
     }
   }

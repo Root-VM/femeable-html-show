@@ -16,7 +16,8 @@
     width: 100%; height: calc(100vh - 400px); min-height: 810px;
     overflow-y: scroll; direction:rtl; padding: 50px;
     display: flex; flex-direction: column; align-items: flex-end;
-
+    scrollbar-color: var(--color--black) var(--color--white);
+    scrollbar-width: thin;
     >*{
       direction: ltr;
     }
