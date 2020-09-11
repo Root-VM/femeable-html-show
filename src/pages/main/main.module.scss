@@ -30,6 +30,9 @@
   .line{
     grid-gap: 15px;
     margin-bottom: 40px;
+    width: calc(100vw - 10px);
+    margin-left: -20px;
+    padding-left: 10px;
   }
   .text{
     margin-bottom: 20px;
