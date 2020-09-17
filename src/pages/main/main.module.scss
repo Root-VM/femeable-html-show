@@ -2,7 +2,7 @@
   display: grid; width: 100%; grid-gap: 20px;
   grid-template-columns: repeat(auto-fit ,  255px);
   justify-content: space-between; margin-bottom: 85px;
-  overflow: visible;
+  overflow: visible; padding: 0 7px;
 }
 
 .text{
@@ -16,10 +16,9 @@
   }
 }
 
-
 @media (max-width: 1142px) {
   .line{
-    overflow-y: hidden; overflow-x: auto;
+    overflow-y: hidden; overflow-x: auto; padding: 0;
     scroll-snap-type: x mandatory; grid-template-columns: 255px 255px 255px 255px;
     >div{
       scroll-snap-align: center;

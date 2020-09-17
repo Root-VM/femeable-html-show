@@ -4,7 +4,7 @@
     max-width: 1200px; margin: 0 auto 70px auto; padding: 0 20px;
     display: flex; flex-wrap: wrap;
     >div{
-      width: 207px; display: flex; flex-direction: column; justify-content: flex-end;
+      width: 210px; display: flex; flex-direction: column; justify-content: flex-end;
       margin-right: 60px;
       .logo{
         width: 100%; max-width: 164px; margin-bottom: 11px;
@@ -15,7 +15,8 @@
         font-size: 20px; line-height: 23px; color: var(--color--black);
         font-feature-settings: 'pnum' on, 'lnum' on;
         img{
-          margin-right: 25px; width: 19px;
+          margin-right: 23px; width: 19px;
+          margin-left: 11px;
         }
       }
 

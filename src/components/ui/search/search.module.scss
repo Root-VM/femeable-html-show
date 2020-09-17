@@ -1,5 +1,5 @@
 .orange{
-  background: var(--color--orange); width: 100%; position: relative; border-radius: 40px; overflow: hidden;
+  width: 100%; position: relative; border-radius: 40px; overflow: hidden;
   box-shadow: 0px -2px 70px rgba(18, 15, 14, 0.08), 0px -0.83px 49.5699px rgba(19, 16, 14, 0.05);
   display: flex; align-items: center;
   img{
@@ -15,6 +15,20 @@
   }
   input::placeholder{
     padding: 0; line-height: 65px; opacity: 1;
+  }
+  input{
+    background: var(--color--orange);
+  }
+
+  input:active, input:focus, input:hover{
+    background: var(--color--white); transition: .3s;
+    color: var(--color--orange);
+    &::placeholder{
+      color: var(--color--orange);
+    }
+    & ~ img{
+      filter: invert(47%) sepia(43%) saturate(3715%) hue-rotate(348deg) brightness(100%) contrast(102%);
+    }
   }
 
 }
@@ -68,7 +82,7 @@
     input{
       font-size: 14px;  padding-left: 50px; min-height: 37px;
       &::placeholder{
-       font-size: 14px;
+       font-size: 14px; line-height: 37px;
       }
     }
     img{

@@ -51,6 +51,16 @@
   }
 }
 
+@media (min-width: 1120px) {
+  .box {
+    >div:nth-child(1){
+      button{
+        margin-left: 7px;
+      }
+    }
+  }
+}
+
 @media (max-width: 1119px) {
   .box {
     justify-content: center; flex-wrap: wrap-reverse;

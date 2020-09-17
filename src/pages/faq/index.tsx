@@ -13,7 +13,9 @@ export default function FaqPage() {
       <div className={classNames('wrap', css.page)}>
         <Header />
         <h2>FAQ</h2>
-        <Search placeholder="How can we help?" tagType="orange" />
+        <div className={css.search}>
+          <Search placeholder="How can we help?" tagType="orange" />
+        </div>
 
         <Dropdown
           text="Fameable is a special platfrom that makes you closer to

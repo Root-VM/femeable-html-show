@@ -5,9 +5,8 @@
     font-size: 35px; line-height: 41px; color: var(--color--black);
   }
 
-  //search margin
-  >div:nth-child(3){
-    margin-bottom: 65px;
+  .search{
+    margin: 0 auto 65px auto; max-width: 900px;
   }
 }
 
@@ -16,7 +15,7 @@
     h2{
       font-size: 18px; margin: 15px 0 20px 0;
     }
-    >div:nth-child(3){
+    .search{
       margin-bottom: 40px;
     }
   }

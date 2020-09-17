@@ -1,11 +1,12 @@
 .box{
   display: flex; justify-content: space-between; flex-wrap: wrap;
+  margin-bottom: 55px;
   h3{
     font-family: var(--font-releway); font-style: normal;
     font-weight: 600; font-size: 40px; line-height: 160%;
     width: 100%; text-align: center;
     letter-spacing: 0.02em; color: var(--color--black);
-    margin-bottom: 54px;
+    margin-bottom: 54px; margin-top: 91px;
   }
 
   ul{
@@ -55,7 +56,7 @@
 
 @media(max-width: 1119px) {
   .box{
-    justify-content: center;
+    justify-content: center;  margin-bottom: 0;
     ul{
       padding-left: 0;
     }
