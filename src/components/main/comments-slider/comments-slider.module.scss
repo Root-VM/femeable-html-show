@@ -134,12 +134,20 @@
     box-shadow: 0px -3.9px 106.4px rgba(16, 9, 4, 0.41), 0px -0.6px 22px rgba(16, 9, 4, 0.2),
       0px -0.1px 8.05px rgba(16, 9, 4, 0.1);
     bottom: -20px;
-    top: auto;
+    top: auto; transition: .3s;
     &:before {
       content: url('/static/img/svg/right.svg');
       position: absolute;
       top: 6px;
-      left: 15px;
+      left: 15px; transition: .3s;
+    }
+    &:hover{
+      transition: .3s; height: 42px; width: 42px;
+      bottom: -27px;
+      &:before {
+        top: 10px;
+        left: 18px; transition: .3s;
+      }
     }
     &.slick-prev {
       display: none !important;
