@@ -1,90 +1,127 @@
-.black{
-  display: flex; box-sizing: border-box;
-  position: relative; height: 45px; width: 100%;
-  .img{
-    display: flex; align-items: center; width: fit-content;
-    position: absolute; top: 0; left: 20px; height: 100%;
+.black {
+  display: flex;
+  box-sizing: border-box;
+  position: relative;
+  height: 45px;
+  width: 100%;
+  .img {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    height: 100%;
+    z-index: 0;
   }
-  .pIcon{
-    display: flex; align-items: center; width: fit-content;
-    position: absolute; top: 0; right: 20px; height: 100%;
-    img{
+  .pIcon {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    right: 20px;
+    height: 100%;
+    img {
       cursor: pointer;
     }
   }
 
-  input{
-    border: 1px solid var(--color--black); border-radius: 5px;
-    height: 100%; width: 100%; background: none;
+  input {
+    border: 1px solid var(--color--black);
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    background: none;
     outline: none;
-    font-family: var(--font-releway); font-style: normal;
-    font-weight: normal; font-size: 15px; line-height: 18px;
-    letter-spacing: 0.02em; color: var(--color--black);
-    padding: 0 20px 0 46px; transition: .3s;
-    &::placeholder{
-      color: #7B7A7A;
+    z-index: 1;
+    font-family: var(--font-releway);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: var(--color--black);
+    padding: 0 20px 0 46px;
+    transition: 0.3s;
+    &::placeholder {
+      color: #7b7a7a;
     }
 
-    &:hover, &:active, &:focus{
-      border-color: var(--color--orange); transition: .3s;
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: var(--color--orange);
+      transition: 0.3s;
       box-shadow: 0 -2px 70px rgba(18, 15, 14, 0.08), 0px -0.83px 49.56px rgba(19, 16, 14, 0.05);
-      & ~ .img, & ~ .pIcon{
+      & ~ .img,
+      & ~ .pIcon {
         filter: invert(46%) sepia(92%) saturate(2839%) hue-rotate(349deg) brightness(104%) contrast(101%);
       }
-      &::placeholder{
+      &::placeholder {
         color: var(--color--orange);
       }
     }
-    &:disabled{
-      cursor: not-allowed;  border-color: var(--color--grey);
+    &:disabled {
+      cursor: not-allowed;
+      border-color: var(--color--grey);
       box-shadow: 0 -2px 70px rgba(18, 15, 14, 0.08), 0px -0.83px 49.56px rgba(19, 16, 14, 0.05);
-      & ~ .img, & ~ .pIcon{
+      & ~ .img,
+      & ~ .pIcon {
         filter: invert(75%) sepia(7%) saturate(134%) hue-rotate(314deg) brightness(107%) contrast(84%);
       }
-      &::placeholder{
+      &::placeholder {
         color: var(--color--grey);
       }
     }
   }
 
-  &.error{
+  &.error {
     box-shadow: 0 -2px 70px rgba(18, 15, 14, 0.08), 0px -0.83px 49.56px rgba(19, 16, 14, 0.05);
     position: relative;
-    &:before{
-      content: url("/static/img/login/error.svg"); position: absolute; top: 14px; right: -25px;
+    &:before {
+      content: url('/static/img/login/error.svg');
+      position: absolute;
+      top: 14px;
+      right: -25px;
     }
-    input{
+    input {
       border-color: var(--color--red);
-      & ~ .img, & ~ .pIcon{
+      & ~ .img,
+      & ~ .pIcon {
         filter: invert(20%) sepia(64%) saturate(4466%) hue-rotate(353deg) brightness(94%) contrast(85%);
       }
-      &::placeholder{
+      &::placeholder {
         color: var(--color--red);
       }
     }
   }
 
-  &.success{
+  &.success {
     box-shadow: 0 -2px 70px rgba(18, 15, 14, 0.08), 0px -0.83px 49.56px rgba(19, 16, 14, 0.05);
     position: relative;
-    &:before{
-      content: url("/static/img/login/success.svg"); position: absolute; top: 14px; right: -25px;
+    &:before {
+      content: url('/static/img/login/success.svg');
+      position: absolute;
+      top: 14px;
+      right: -25px;
     }
-    input{
+    input {
       border-color: var(--color--green);
-      & ~ .img, & ~ .pIcon{
+      & ~ .img,
+      & ~ .pIcon {
         filter: invert(50%) sepia(14%) saturate(2390%) hue-rotate(60deg) brightness(100%) contrast(90%);
       }
-      &::placeholder{
+      &::placeholder {
         color: var(--color--green);
       }
     }
   }
-
 }
 
 @media (max-width: 919px) {
-  .black, .default{
+  .black,
+  .default {
     height: 32px;
   }
 }

@@ -49,9 +49,9 @@ export const SingUpBlock: React.FC = () => {
           Create account
         </Button>
 
-        <p className={css.text}>
-          Do not have an account? <a href="#">Sign up</a>
-        </p>
+        <a href="#" className={css.text}>
+          Do not have an account? <span>Sign up</span>
+        </a>
 
         <p className={css.or}>
           {' '}

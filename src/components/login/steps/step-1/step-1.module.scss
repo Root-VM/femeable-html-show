@@ -1,39 +1,64 @@
-.box{
-  display: flex; flex-direction: column; width: 100%;
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   box-sizing: border-box;
 
-  .inputs{
-    display: flex; flex-direction: column; width: 100%;
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     box-sizing: border-box;
-    > div{
+    > div {
       margin-bottom: 25px;
     }
-    .inputLine{
-      display: flex; position: relative;
-      >div:nth-child(2){
-        position: absolute; right: -30px; height: 100%;
-        display: flex; align-items: center;
+    .inputLine {
+      display: flex;
+      position: relative;
+      > div:nth-child(2) {
+        position: absolute;
+        right: -30px;
+        height: 100%;
+        display: flex;
+        align-items: center;
       }
     }
   }
-  .check{
+  .check {
     margin-bottom: 45px;
   }
 
-  .bottomText{
-    font-family: var(--font-releway); font-style: normal; font-weight: 300;
-    font-size: 12px; line-height: 14px;
-    text-align: center; letter-spacing: 0.02em; color: var(--color--black);
+  .bottomText {
+    font-family: var(--font-releway);
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--color--black);
     margin: 15px 0;
-    a{
-      color: var(--color--black); text-decoration: none; font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+    span {
+      color: var(--color--black);
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    &:hover {
+      color: var(--color--orange);
+      transition: 0.3s;
+      span {
+        color: var(--color--orange);
+        transition: 0.3s;
+      }
     }
   }
 }
 
-
 @media (max-width: 919px) {
-  .box .inputs > div{
+  .box .inputs > div {
     margin-bottom: 20px;
   }
 }

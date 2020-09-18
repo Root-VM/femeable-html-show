@@ -29,9 +29,9 @@ export const Step1: React.FC = () => {
         Create account
       </Button>
 
-      <p className={css.bottomText}>
-        Already have an account? <a href="#">Log in</a>
-      </p>
+      <a href="#" className={css.bottomText}>
+        Already have an account? <span>Log in</span>
+      </a>
     </div>
   );
 };

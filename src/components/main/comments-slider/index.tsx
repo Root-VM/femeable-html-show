@@ -1,5 +1,4 @@
 import React from 'react';
-// @ts-ignore
 import Slider from 'react-slick';
 
 import css from './comments-slider.module.scss';
@@ -13,13 +12,41 @@ const settings = {
 };
 
 export const CommentsSlider: React.FC = () => {
+  const customSlider: any = React.createRef();
+
+  const gotoNext = () => {
+    customSlider.current.slickNext();
+  };
+
+  const gotoPrev = () => {
+    customSlider.current.slickPrev();
+  };
+
   return (
     <div className={css.box}>
       <h4>See what our clients think</h4>
 
-      <Slider {...settings} className={css.slickSlider}>
+      <Slider {...settings} ref={customSlider} className={css.slickSlider}>
+        {/* list */}
         <div>
           <div className={css.slider}>
+            <div
+              aria-label="p"
+              className={css.prevMethod}
+              onClick={() => gotoPrev()}
+              onKeyDown={() => false}
+              role="button"
+              tabIndex={0}
+            />
+            <div
+              aria-label="p"
+              className={css.nextMethod}
+              onClick={() => gotoNext()}
+              onKeyDown={() => false}
+              role="button"
+              tabIndex={0}
+            />
+
             <div className={css.imgGroup}>
               <img src="/static/img/avatar2.png" alt="avatar" />
               <p>Eleanor Pena</p>
@@ -35,6 +62,22 @@ export const CommentsSlider: React.FC = () => {
         </div>
         <div>
           <div className={css.slider}>
+            <div
+              aria-label="p"
+              className={css.prevMethod}
+              onClick={() => gotoPrev()}
+              onKeyDown={() => false}
+              role="button"
+              tabIndex={0}
+            />
+            <div
+              aria-label="p"
+              className={css.nextMethod}
+              onClick={() => gotoNext()}
+              onKeyDown={() => false}
+              role="button"
+              tabIndex={0}
+            />
             <div className={css.imgGroup}>
               <img src="/static/img/avatar2.png" alt="avatar" />
               <p>Eleanor Pena</p>

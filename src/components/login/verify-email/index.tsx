@@ -17,9 +17,9 @@ export const VerifyEmail: React.FC = () => {
           <input type="number" />
         </div>
 
-        <p className={css.otp}>
-          Didn’t receive OTP? <a href="#">Resend code</a>
-        </p>
+        <a href="#" className={css.otp}>
+          Didn’t receive OTP? <span>Resend code</span>
+        </a>
 
         <Button tagType="orange" size="small">
           Verify
