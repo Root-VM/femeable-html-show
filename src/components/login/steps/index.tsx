@@ -16,8 +16,9 @@ export const Steps: React.FC = () => {
       </div>
 
       <div className={css.inputBlock}>
-        <h3>Sing up</h3>
+        <h3>Sign up</h3>
 
+        <p>as a celebrity</p>
         <Stepper count={4} activeStep={2} />
 
         <Step1 />

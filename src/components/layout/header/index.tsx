@@ -37,12 +37,10 @@ export const Header: React.FC = () => {
           </Link>
         </li>
         <li className={css.active}>
-          <Link href="/">
-            <a onClick={() => setDetail(!detailsOpened)} onKeyDown={() => false} role="button" tabIndex={0}>
-              <img src="/static/img/svg/user.svg" alt="user" />
-              Hello, Yuliia Leniv
-            </a>
-          </Link>
+          <a onClick={() => setDetail(!detailsOpened)} onKeyDown={() => false} role="button" tabIndex={0}>
+            <img src="/static/img/svg/user.svg" alt="user" />
+            Hello, Yuliia Leniv
+          </a>
 
           <div className={classNames(css.menuBox, detailsOpened ? css.detailShow : '')}>
             <Link href="/">

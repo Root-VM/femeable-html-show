@@ -76,6 +76,39 @@ export const BookingBlock: React.FC = () => {
         </div>
       </div>
 
+      {/* <div className={classNames(css.element, css.elementShort)}> */}
+      {/*  <div className={css.column}> */}
+      {/*    <div className={css.texts}> */}
+      {/*      <h3>Order Details </h3> */}
+      {/*      <div className={css.text}> */}
+      {/*        Please, write in all the necessary data correctly, to get an individual video from the celebrity */}
+      {/*      </div> */}
+      {/*    </div> */}
+
+      {/*    <p className={css.smallTitle}>Payment Information</p> */}
+
+      {/*    <div className={css.inputs}> */}
+      {/*      <Input placeholder="To" styleType="black" /> */}
+      {/*      <Input placeholder="From" styleType="black" /> */}
+      {/*    </div> */}
+      {/*  </div> */}
+
+      {/*  <div className={css.column}> */}
+      {/*    <div className={css.photo}> */}
+      {/*      <div> */}
+      {/*        <img src="/static/img/people/Matthew2.png" alt="man" /> */}
+      {/*      </div> */}
+      {/*      <p className={css.name}>Matthew Mcconaughey</p> */}
+      {/*      <p className={css.price}>100$</p> */}
+      {/*    </div> */}
+      {/*  </div> */}
+
+      {/*  <div className={css.borders}> */}
+      {/*    <span className={css.active} /> */}
+      {/*    <span /> */}
+      {/*  </div> */}
+      {/* </div> */}
+
       <div className={css.btnGroup}>
         <Button size="small" tagType="orangeBorder">
           Cancel

@@ -1,33 +1,55 @@
-.box{
-  display: grid; grid-gap: 70px; grid-template-columns: repeat(auto-fit ,  300px);
-  justify-content: space-around; max-width: 1040px; margin: 0 auto 30px auto;
-  .photo{
-    position: relative; width: 300px; height: 195px; display: flex; align-items: center;
-    justify-content: center; transition: .3s; cursor: pointer;
+.box {
+  display: grid;
+  grid-gap: 70px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: space-around;
+  max-width: 1040px;
+  margin: 0 auto 30px auto;
+  .photo {
+    position: relative;
+    width: 300px;
+    height: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    cursor: pointer;
     border-radius: 3px;
-    img{
-      width: 300px; height: 195px; position: absolute; top: 0; left: 0; z-index: 0;
-      transition: .3s;
+    img {
+      width: 300px;
+      height: 195px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      transition: 0.3s;
     }
-    p{
-      position: absolute; left: 50%; top: 50%;
-      transform: translate(-50%,-50%);
+    p {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
       font-family: var(--font-releway);
       font-style: normal;
       font-weight: 500;
-      font-size: 24px; line-height: 28px;
+      font-size: 24px;
+      line-height: 28px;
       letter-spacing: 0.02em;
       color: var(--color--white);
-      transition: .3s;
+      transition: 0.3s;
+      white-space: nowrap;
     }
-    &:hover{
-      transition: .3s;
-      img{
-        width: 340px; transition: .3s;
-        height: 225px; top: -10px; left: -20px;
+    &:hover {
+      transition: 0.3s;
+      img {
+        width: 340px;
+        transition: 0.3s;
+        height: 225px;
+        top: -10px;
+        left: -20px;
       }
-      p{
-        transition: .3s;
+      p {
+        transition: 0.3s;
         font-weight: 600;
         font-size: 26px;
         line-height: 31px;
@@ -37,9 +59,9 @@
 }
 
 @media (max-width: 719px) {
-  .box{
+  .box {
     grid-gap: 45px;
-    .photo p{
+    .photo p {
       font-size: 24px;
       line-height: 28px;
     }

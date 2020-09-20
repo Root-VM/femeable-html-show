@@ -18,7 +18,7 @@ export const SingUpBlock: React.FC = () => {
       </div>
 
       <div className={css.inputBlock}>
-        <h3>Sing up</h3>
+        <h3>Sign up</h3>
         <p className={css.smallTitle}>as a consumer</p>
 
         <div className={css.inputs}>
