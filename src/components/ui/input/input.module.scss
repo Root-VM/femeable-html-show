@@ -36,6 +36,7 @@
     outline: none;
     z-index: 1;
     font-family: var(--font-releway);
+    font-feature-settings: 'pnum' on, 'lnum' on;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
@@ -46,6 +47,7 @@
     transition: 0.3s;
     &::placeholder {
       color: #7b7a7a;
+      font-feature-settings: 'pnum' on, 'lnum' on;
     }
 
     &:hover,

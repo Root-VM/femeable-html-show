@@ -20,7 +20,7 @@ export const VideoSetting: React.FC = () => {
           <div className={css.text}>
             <p>Please, select video duration</p>
             <Hint
-              text="Please enter a secure password of at least 6 characters"
+              text="You will have to record a video of the specified duration"
               imgUrl="/static/img/svg/question.svg"
             />
           </div>
@@ -41,10 +41,7 @@ export const VideoSetting: React.FC = () => {
 
           <div className={css.text}>
             <p>Please, select video duration</p>
-            <Hint
-              text="Please enter a secure password of at least 6 characters"
-              imgUrl="/static/img/svg/question.svg"
-            />
+            <Hint text="You will receive payment for each of your videos." imgUrl="/static/img/svg/question.svg" />
           </div>
 
           <Input styleType="black" type="text" iconUrl="/static/img/svg/dollar.svg" placeholder="Set your price" />

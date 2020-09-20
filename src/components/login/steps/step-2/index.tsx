@@ -25,14 +25,14 @@ export const Step2: React.FC = () => {
         <Radio id="4" name="radio">
           5 min
         </Radio>
-        <Hint text="Please enter a secure password of at least 6 characters" imgUrl="/static/img/svg/question.svg" />
+        <Hint text="You will have to record a video of the specified duration" imgUrl="/static/img/svg/question.svg" />
       </div>
 
       <p className={css.text}>Please, set the price for your video</p>
 
       <div className={css.inputLine}>
         <Input styleType="black" type="text" iconUrl="/static/img/svg/dollar.svg" placeholder="Set your price" />
-        <Hint text="Please enter a secure password of at least 6 characters" imgUrl="/static/img/svg/question.svg" />
+        <Hint text="You will receive payment for each of your videos." imgUrl="/static/img/svg/question.svg" />
       </div>
 
       <Button tagType="orange" size="small">
