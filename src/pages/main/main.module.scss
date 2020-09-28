@@ -27,25 +27,10 @@
   }
 }
 
-@media (max-width: 1142px) {
-  .line {
-    overflow-y: hidden;
-    overflow-x: auto;
-    padding: 0;
-    grid-template-columns: 255px 255px 255px 255px;
-    //scroll-snap-type: x mandatory; scroll-snap-stop: normal;
-    > div {
-      scroll-snap-align: center;
-    }
-  }
-}
 @media (max-width: 919px) {
   .line {
-    grid-gap: 15px;
-    margin-bottom: 40px;
-    width: calc(100vw - 10px);
-    margin-left: -20px;
-    padding-left: 10px;
+    grid-gap: 15px; justify-content: space-around;
+    margin-bottom: 40px; padding: 0;
   }
   .text {
     margin-bottom: 20px;

@@ -24,15 +24,15 @@
   }
   .box{
     display: grid; width: 100%; grid-gap: 80px 40px;
-    grid-template-columns: 255px 255px 255px 255px;
-    justify-content: space-between; margin-bottom: 40px;
+    margin-bottom: 40px;
+    grid-template-columns: repeat(auto-fit, 255px);
+    justify-content: space-between;
   }
 }
 
 @media (max-width: 1142px) {
   .content .box{
-    overflow-y: hidden; overflow-x: auto;
-    scroll-snap-type: x mandatory; grid-template-columns: 255px 255px 255px 255px;
+    justify-content: space-around;
     >div{
       scroll-snap-align: center;
     }
@@ -50,8 +50,8 @@
       margin-bottom: 55px;
     }
     .box{
-      grid-gap: 15px; width: calc(100vw - 10px); padding-left: 10px;
-      margin-left: -20px; margin-bottom: 40px;
+      grid-gap: 15px; width: 100%;
+      margin-bottom: 40px; padding: 0;
     }
   }
 }
