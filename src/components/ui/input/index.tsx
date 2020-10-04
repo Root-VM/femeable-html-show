@@ -28,12 +28,16 @@ export const Input: React.FC<InputProps> = ({
       )}
 
       {type === 'password' ? (
-        <div className={css.pIcon}>
-          <img src="/static/img/svg/eye.svg" alt="eye" />
-        </div>
+        <>
+          <button className={css.pIcon} type="button">
+            <img src="/static/img/svg/eye.svg" alt="eye" />
+          </button>
+        </>
       ) : (
         false
       )}
+
+      {status === 'error' && <p className={css.invalidText}>Invalid</p>}
     </div>
   );
 };
